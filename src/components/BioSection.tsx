@@ -1,7 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { LinkedinIcon, Mail, Phone } from 'lucide-react';
-import profilePlaceholder from '@/assets/profile-placeholder.jpg';
 
 export function BioSection() {
   return (
@@ -20,7 +19,7 @@ export function BioSection() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
-                src={profilePlaceholder}
+                src="/lovable-uploads/bdd8f1f9-312a-4c11-9534-62c4b61122e0.png"
                 alt="Healthcare Management Expert"
                 className="w-full max-w-md mx-auto rounded-lg shadow-elegant"
               />
