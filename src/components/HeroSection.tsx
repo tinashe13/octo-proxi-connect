@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
-import octopusLogo from '@/assets/octopus-logo.png';
+import octopusLogo from '/lovable-uploads/2f99c8e2-c7e1-4335-8bb0-7218097e5efb.png';
 import heroBg from '@/assets/hero-bg.jpg';
 
 export function HeroSection() {

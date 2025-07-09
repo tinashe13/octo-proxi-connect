@@ -3,7 +3,7 @@ import { ContactForm } from '@/components/ContactForm';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { ArrowLeft, Settings, Shield, Target, Users, FileText, BarChart3, Stethoscope, Clipboard } from 'lucide-react';
+import { ArrowLeft, Settings, Shield, Target, Users, FileText, BarChart3, Stethoscope, Clipboard, UserPlus } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function ManagementServices() {
@@ -11,44 +11,44 @@ export default function ManagementServices() {
   
   const services = [
     {
-      title: "Strategic Planning",
-      icon: Target,
-      description: "Comprehensive strategic planning services to help your healthcare organization define goals, develop actionable plans, and achieve sustainable growth through data-driven decision making."
-    },
-    {
-      title: "Operations Management",
-      icon: Settings,
-      description: "Streamline your daily operations with efficient workflow management, resource optimization, and process improvement strategies tailored to healthcare environments."
-    },
-    {
-      title: "Quality Assurance",
-      icon: Shield,
-      description: "Ensure the highest standards of care with comprehensive quality assurance programs, performance monitoring, and continuous improvement initiatives."
-    },
-    {
-      title: "Staff Management",
+      title: "Substitute Management",
       icon: Users,
-      description: "Optimize your workforce through effective staff scheduling, performance management, training programs, and retention strategies specifically designed for healthcare teams."
+      description: "Effective management of short-term absences is crucial for healthcare organizations to maintain productivity, ensure team dynamics, and address the well-being of their employees, including managers. The goal is to maintain continuity of care while leadership is unavailable due to maternity leave, illness or injury, short term leave due to personal or family emergency, or other circumstances."
     },
     {
-      title: "Compliance Management",
-      icon: FileText,
-      description: "Navigate complex healthcare regulations with expert compliance management, policy development, and audit preparation to ensure your organization meets all requirements."
+      title: "Crisis Management",
+      icon: Shield,
+      description: "Crisis management in healthcare focuses on strategies and actions taken to prepare for, respond to, and recover from disruptive events that threaten the well-being of patients, staff, and the organizations. The goal is to predict and prevent events from happening by removing uncertainty and updating processes in circumstances such as staff morale matters, displeased patient experiences, etc. After a crisis, it's essential to assess the impact, address any lingering issues, and implement measures to prevent similar events from happening again."
     },
     {
-      title: "Performance Analytics",
+      title: "Remote Management",
+      icon: Settings,
+      description: "Managing healthcare operations and patient care from a distance. This includes telehealth, remote patient monitoring (RPM), and managing virtual staff. It leverages digital tools and platforms to expand the reach of healthcare services, improve patient outcomes and magnify operational efficiency."
+    },
+    {
+      title: "Transition Management",
+      icon: Target,
+      description: "Transition management refers to the process of guiding organizations through periods of significant change, ensuring a smooth and effective shift from one state to another. It encompasses various aspects, including planning, managing, and sustaining the change, while also addressing the human element of adapting to new processes and systems during instances such as sudden leadership leave or new organization take over."
+    },
+    {
+      title: "Recruitment Management",
+      icon: UserPlus,
+      description: "Recruitment management refers to the process of selecting and hiring qualified candidates for job openings within an organization. It encompasses a range of activities, including identifying job vacancies, advertising those positions, screening applications, conducting interviews, and ultimately, onboarding the chosen candidates. Effective recruitment management is crucial for building a skilled and motivated workforce including leadership, clinical staff (RD, RN, APRN, MD, etc), and administration staff (receptionist, billing, navigators, etc)."
+    },
+    {
+      title: "Project Management",
       icon: BarChart3,
-      description: "Make informed decisions with comprehensive performance analytics, KPI tracking, and detailed reporting that provides insights into your organization's effectiveness."
+      description: "Project management in healthcare refers to the application of project management principles, processes, and techniques to healthcare initiatives. It involves planning, organizing, and managing resources to achieve specific healthcare goals and objectives, such as improving patient care, streamlining operations, and reducing costs. Key instances include expanding satellite offices, launching new service lines/facilities, and creating HR workshops for staff."
     },
     {
-      title: "Clinical Operations",
-      icon: Stethoscope,
-      description: "Enhance clinical workflows, improve patient care coordination, and optimize clinical processes to ensure efficient and effective healthcare delivery."
-    },
-    {
-      title: "Administrative Oversight",
+      title: "Training Management",
       icon: Clipboard,
-      description: "Comprehensive administrative management including policy implementation, procedure standardization, and organizational structure optimization for healthcare facilities."
+      description: "Training management in healthcare encompasses the strategies, systems, and processes used to ensure healthcare professionals receive the necessary education and development to deliver high-quality patient care and maintain compliance with evolving standards. It involves designing, delivering, and evaluating training programs and creating processes to enhance learning experiences. Training management can be utilized for leadership training, clinical staff training, and administration staff training."
+    },
+    {
+      title: "Customizable Management Services",
+      icon: Stethoscope,
+      description: "Customizable management services include 'Pro re nata' (PRN) services for Healthcare organizations that involve tailored solutions designed specifically for your unique operational needs. These services are flexible and adaptable to meet the specific requirements of your healthcare organization, ensuring optimal efficiency and effectiveness in your daily operations."
     }
   ];
 
@@ -69,7 +69,7 @@ export default function ManagementServices() {
             </Button>
             
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Management Services
+              Healthcare Customizable Management Services
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
               Comprehensive healthcare management solutions designed to optimize your operations and improve patient outcomes
