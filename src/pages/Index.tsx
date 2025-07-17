@@ -19,7 +19,7 @@ const Index = () => {
       >
         Email Us
       </button>
-      <main className="lg:pl-80 pl-0">
+      <main className="lg:pl-[320px] pl-0">
         <HeroSection />
         <ServicesSection />
         <BioSection />
