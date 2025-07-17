@@ -110,34 +110,36 @@ export default function About() {
                         </p>
                       </div>
                       
-                      <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-                        <Button
-                          variant="outline"
-                          size="lg"
-                          className="hover:bg-gradient-gold hover:border-primary"
-                          onClick={() => window.open('https://linkedin.com', '_blank')}
-                        >
-                          <LinkedinIcon className="h-4 w-4 mr-2" />
-                          Connect on LinkedIn
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="lg"
-                          className="hover:bg-gradient-gold hover:border-primary"
-                          onClick={() => window.open('https://www.google.com/search?q=octo+proxi+management+reviews', '_blank')}
-                        >
-                          <Star className="h-4 w-4 mr-2" />
-                          Google Reviews
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="lg"
-                          className="hover:bg-gradient-gold hover:border-primary"
-                          onClick={() => window.open('mailto:info@octoproxi.com')}
-                        >
-                          <Mail className="h-4 w-4 mr-2" />
-                          Email Us
-                        </Button>
+                      <div className="flex flex-col gap-4 mt-8">
+                        <div className="flex flex-wrap justify-center gap-2">
+                          <Button
+                            variant="outline"
+                            size="lg"
+                            className="hover:bg-gradient-gold hover:border-primary flex-1 min-w-0 sm:flex-none"
+                            onClick={() => window.open('https://linkedin.com', '_blank')}
+                          >
+                            <LinkedinIcon className="h-4 w-4 mr-2" />
+                            <span className="truncate">LinkedIn</span>
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="lg"
+                            className="hover:bg-gradient-gold hover:border-primary flex-1 min-w-0 sm:flex-none"
+                            onClick={() => window.open('https://www.google.com/search?q=octo+proxi+management+reviews', '_blank')}
+                          >
+                            <Star className="h-4 w-4 mr-2" />
+                            <span className="truncate">Reviews</span>
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="lg"
+                            className="hover:bg-gradient-gold hover:border-primary flex-1 min-w-0 sm:flex-none"
+                            onClick={() => window.open('mailto:info@octoproxi.com')}
+                          >
+                            <Mail className="h-4 w-4 mr-2" />
+                            <span className="truncate">Email</span>
+                          </Button>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>

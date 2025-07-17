@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,8 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['Montserrat', 'system-ui', 'sans-serif'],
-				'montserrat': ['Montserrat', 'sans-serif'],
+				'sans': ['"Brush Script MT"', 'cursive', 'system-ui', 'sans-serif'],
+				'montserrat': ['"Brush Script MT"', 'cursive', 'Montserrat', 'sans-serif'],
+				'brush': ['"Brush Script MT"', 'cursive', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
