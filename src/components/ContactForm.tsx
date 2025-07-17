@@ -43,7 +43,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
 
   // Sidebar for desktop
   const sidebar = (
-    <div className="fixed left-0 top-0 h-full w-80 bg-contact border-r border-contact-border shadow-elegant z-50 flex flex-col justify-between hidden md:flex">
+    <div className="fixed left-0 top-0 h-full w-80 bg-contact border-r border-contact-border shadow-elegant z-50 flex flex-col justify-between hidden lg:flex">
       <div className="flex flex-col items-center pt-8 pb-4">
         <img
           src="/lovable-uploads/60db243d-749f-436f-8ff5-3baf619bb0b7.png"

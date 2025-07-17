@@ -13,13 +13,13 @@ const Index = () => {
       <ContactForm mobileOpen={contactOpen} onMobileClose={() => setContactOpen(false)} />
       {/* Mobile/Tablet Contact Button */}
       <button
-        className="fixed bottom-6 right-6 z-50 md:hidden bg-gradient-gold text-white rounded-full shadow-lg px-6 py-3 font-semibold text-lg hover:shadow-gold transition"
+        className="fixed bottom-6 right-6 z-50 lg:hidden bg-gradient-gold text-white rounded-full shadow-lg px-6 py-3 font-semibold text-lg hover:shadow-gold transition"
         onClick={() => setContactOpen(true)}
         aria-label="Email Us"
       >
         Email Us
       </button>
-      <main className="md:pl-80 pl-0">
+      <main className="lg:pl-80 pl-0">
         <HeroSection />
         <ServicesSection />
         <BioSection />

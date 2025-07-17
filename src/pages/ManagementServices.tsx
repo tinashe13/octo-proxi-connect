@@ -56,7 +56,7 @@ export default function ManagementServices() {
     <div className="min-h-screen bg-background">
       <ContactForm />
       
-      <main className="pl-80">
+      <main className="lg:pl-80">
         <div className="container mx-auto px-4 py-8">
           <div className="mb-8">
             <Button

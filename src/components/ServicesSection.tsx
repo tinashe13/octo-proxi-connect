@@ -35,7 +35,7 @@ export function ServicesSection() {
 
   return (
     <section id="services" className="py-20 bg-gradient-dark">
-      <div className="container mx-auto px-4 md:pl-84 pl-4">
+      <div className="container mx-auto px-4 lg:pl-84 pl-4">
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <Card key={index} className="bg-card border-border hover:shadow-elegant transition-all duration-300 hover:scale-105">
