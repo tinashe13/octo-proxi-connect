@@ -74,9 +74,6 @@ export default function AssistantServices() {
                   <CardTitle className="text-card-foreground">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-muted-foreground mb-4">
-                    {service.description.substring(0, 100)}...
-                  </CardDescription>
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button variant="outline" className="w-full hover:bg-gradient-gold hover:border-primary">
