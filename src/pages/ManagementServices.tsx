@@ -79,14 +79,11 @@ export default function ManagementServices() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="bg-card border-border hover:shadow-elegant transition-all duration-300 hover:scale-105">
-                <CardHeader>
-                  <service.icon className="h-8 w-8 text-primary mb-2" />
+                <CardHeader className="text-center">
+                  <service.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
                   <CardTitle className="text-card-foreground">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-muted-foreground mb-4">
-                    {service.description.substring(0, 100)}...
-                  </CardDescription>
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button variant="outline" className="w-full hover:bg-gradient-gold hover:border-primary">
