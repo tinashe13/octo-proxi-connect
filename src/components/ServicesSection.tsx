@@ -40,7 +40,6 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <Card key={index} className="bg-card border-border hover:shadow-elegant transition-all duration-300 hover:scale-105">
               <CardHeader className="pb-4 text-center">
-                <service.icon className="h-16 w-16 text-primary mx-auto mb-4" />
                 <CardTitle className="text-3xl text-card-foreground mb-6">{service.title}</CardTitle>
                 <Button
                   variant="outline"
