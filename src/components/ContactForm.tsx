@@ -5,7 +5,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
-import { Send, Phone, Mail } from 'lucide-react';
+import { Send, Mail } from 'lucide-react';
 import octopusLogo from '/lovable-uploads/2f99c8e2-c7e1-4335-8bb0-7218097e5efb.png';
 import { Dialog, DialogContent, DialogOverlay, DialogTitle } from '@/components/ui/dialog';
 
@@ -57,16 +57,12 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
             <Mail className="h-5 w-5" />
             Contact Us
           </CardTitle>
-          <div className="space-y-2 text-sm text-contact-foreground">
-            <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4" />
-              <span>555-555-5555</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4" />
-              <span>info@octoproxi.com</span>
-            </div>
-          </div>
+                <div className="space-y-2 text-sm text-contact-foreground">
+                  <div className="flex items-center gap-2">
+                    <Mail className="h-4 w-4" />
+                    <span>info@octoproxi.com</span>
+                  </div>
+                </div>
         </CardHeader>
         
         <CardContent className="p-6">
@@ -137,7 +133,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
   const mobileDrawer = (
     <Dialog open={mobileOpen} onOpenChange={onMobileClose}>
       <DialogOverlay className="fixed inset-0 bg-black/40 z-50" />
-      <DialogContent className="fixed left-1/2 top-1/2 w-[90vw] max-w-md -translate-x-1/2 -translate-y-1/2 bg-contact rounded-lg shadow-lg z-50 p-0">
+      <DialogContent className="fixed left-1/2 top-1/2 w-[95vw] max-w-lg -translate-x-1/2 -translate-y-1/2 bg-contact rounded-lg shadow-lg z-50 p-0 max-h-[90vh]">
         <div className="flex flex-col h-full justify-between">
           <div className="flex-1 overflow-y-auto">
             <div className="flex flex-col items-center pt-8 pb-4">
@@ -154,10 +150,6 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
                   Contact Us
                 </CardTitle>
                 <div className="space-y-2 text-sm text-contact-foreground">
-                  <div className="flex items-center gap-2">
-                    <Phone className="h-4 w-4" />
-                    <span>555-555-5555</span>
-                  </div>
                   <div className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
                     <span>info@octoproxi.com</span>

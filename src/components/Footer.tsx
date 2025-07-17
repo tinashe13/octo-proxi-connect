@@ -1,11 +1,11 @@
-import { LinkedinIcon, Mail, Phone } from 'lucide-react';
+import { LinkedinIcon, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
     <footer className="bg-secondary py-12 border-t border-border">
-      <div className="container mx-auto px-4 md:pl-84">
+      <div className="container mx-auto px-4 md:pl-84 pl-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             {/* Company Info */}
             <div>
               <h3 className="text-xl font-bold text-foreground mb-4">
@@ -20,10 +20,6 @@ export function Footer() {
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-4">Contact</h4>
               <div className="space-y-2 text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  <span>555-555-5555</span>
-                </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
                   <span>info@octoproxi.com</span>

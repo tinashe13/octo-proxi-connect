@@ -19,7 +19,7 @@ const Index = () => {
       >
         Email Us
       </button>
-      <main className="md:pl-80">
+      <main className="md:pl-80 pl-0">
         <HeroSection />
         <ServicesSection />
         <BioSection />
