@@ -7,7 +7,6 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { Send, Mail } from 'lucide-react';
-import octopusLogo from '/lovable-uploads/2f99c8e2-c7e1-4335-8bb0-7218097e5efb.png';
 import { Dialog, DialogContent, DialogOverlay, DialogTitle } from '@/components/ui/dialog';
 
 export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?: boolean, onMobileClose?: () => void } = {}) {
@@ -46,23 +45,25 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
   const sidebar = (
     <div className="fixed left-0 top-0 h-full w-80 bg-contact border-r border-contact-border shadow-elegant z-50 flex flex-col justify-between hidden lg:flex">
       <div className="flex flex-col items-center pt-8 pb-4">
-        <img
-          src="/lovable-uploads/60db243d-749f-436f-8ff5-3baf619bb0b7.png"
-          alt="Octo-Proxi Management Logo"
-          className="w-24 h-24 mb-2 drop-shadow-lg rounded-full bg-white p-2 opacity-80"
-        />
+        <div className="w-24 h-24 rounded-full bg-white/20 p-2 shadow-elegant mb-2">
+          <img
+            src="/lovable-uploads/60db243d-749f-436f-8ff5-3baf619bb0b7.png"
+            alt="Octo-Proxi Management Logo"
+            className="w-full h-full object-cover rounded-full"
+          />
+        </div>
       </div>
       <Card className="h-full rounded-none border-0 bg-contact">
         <CardHeader className="border-b border-contact-border">
-          <CardTitle className="text-contact-foreground">
+          <CardTitle className="text-contact-foreground text-center">
             Contact Us
           </CardTitle>
-                <div className="space-y-2 text-sm text-contact-foreground">
-                  <div className="flex items-center gap-2">
-                    <Mail className="h-4 w-4" />
-                    <span>info@octoproxi.com</span>
-                  </div>
-                </div>
+          <div className="space-y-2 text-sm text-contact-foreground text-center">
+            <div className="flex items-center justify-center gap-2">
+              <Mail className="h-4 w-4" />
+              <span>info@octoproxi.com</span>
+            </div>
+          </div>
         </CardHeader>
         
         <CardContent className="p-6">
@@ -94,7 +95,6 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
               />
             </div>
             
-            
             <div className="space-y-2">
               <Label htmlFor="message" className="text-contact-foreground">Message</Label>
               <Textarea
@@ -113,12 +113,12 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
               disabled={isSubmitting}
               className="w-full bg-gradient-gold hover:shadow-gold"
             >
-                      {isSubmitting ? 'Sending...' : (
-                        <>
-                          <Send className="h-4 w-4 mr-2" />
-                          Email Us
-                        </>
-                      )}
+              {isSubmitting ? 'Sending...' : (
+                <>
+                  <Send className="h-4 w-4 mr-2" />
+                  Email Us
+                </>
+              )}
             </Button>
           </form>
         </CardContent>
@@ -137,19 +137,21 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
         <div className="flex flex-col h-full justify-between">
           <div className="flex-1 overflow-y-auto">
             <div className="flex flex-col items-center pt-8 pb-4">
-              <img
-                src="/lovable-uploads/60db243d-749f-436f-8ff5-3baf619bb0b7.png"
-                alt="Octo-Proxi Management Logo"
-                className="w-24 h-24 mb-2 drop-shadow-lg rounded-full bg-white p-2 opacity-80"
-              />
+              <div className="w-24 h-24 rounded-full bg-white/20 p-2 shadow-elegant mb-2">
+                <img
+                  src="/lovable-uploads/60db243d-749f-436f-8ff5-3baf619bb0b7.png"
+                  alt="Octo-Proxi Management Logo"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
             </div>
             <Card className="h-full rounded-none border-0 bg-contact">
               <CardHeader className="border-b border-contact-border">
-                <CardTitle className="text-contact-foreground">
+                <CardTitle className="text-contact-foreground text-center">
                   Contact Us
                 </CardTitle>
-                <div className="space-y-2 text-sm text-contact-foreground">
-                  <div className="flex items-center gap-2">
+                <div className="space-y-2 text-sm text-contact-foreground text-center">
+                  <div className="flex items-center justify-center gap-2">
                     <Mail className="h-4 w-4" />
                     <span>info@octoproxi.com</span>
                   </div>
@@ -184,7 +186,6 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
                       placeholder="your@email.com"
                     />
                   </div>
-                  
                   
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-contact-foreground">Message</Label>
