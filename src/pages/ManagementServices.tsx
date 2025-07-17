@@ -23,7 +23,7 @@ export default function ManagementServices() {
     {
       title: "Remote Management",
       icon: Settings,
-      description: "Managing healthcare operations and patient care from a distance. This includes telehealth, remote patient monitoring (RPM), and managing virtual staff. It leverages digital tools and platforms to expand the reach of healthcare services, improve patient outcomes and magnify operational efficiency."
+      description: "Managing healthcare operations and patient care from a distance. This includes telehealth, remote patient monitoring (RPM), and managing virtual staff. It leverages digital tools and platforms to expand the reach of healthcare services, improve patient outcomes and magnify operational efficiency. Due to being a dual citizen of Slovakia and the United States, we can provide remote services internationally - (EU, USA)."
     },
     {
       title: "Transition Management",

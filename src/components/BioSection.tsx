@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { LinkedinIcon, Mail } from 'lucide-react';
+import { LinkedinIcon, Mail, Star } from 'lucide-react';
 
 export function BioSection() {
   return (
@@ -51,6 +51,15 @@ export function BioSection() {
                     >
                       <LinkedinIcon className="h-4 w-4 mr-2" />
                       Connect on LinkedIn
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="hover:bg-gradient-gold hover:border-primary"
+                      onClick={() => window.open('https://www.google.com/search?q=octo+proxi+management+reviews', '_blank')}
+                    >
+                      <Star className="h-4 w-4 mr-2" />
+                      Google Reviews
                     </Button>
                     <Button
                       variant="outline"
