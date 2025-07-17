@@ -15,11 +15,11 @@ const Index = () => {
       <button
         className="fixed bottom-6 right-6 z-50 md:hidden bg-gradient-gold text-white rounded-full shadow-lg px-6 py-3 font-semibold text-lg hover:shadow-gold transition"
         onClick={() => setContactOpen(true)}
-        aria-label="Contact Us"
+        aria-label="Email Us"
       >
-        Contact
+        Email Us
       </button>
-      <main className="pl-80">
+      <main className="md:pl-80">
         <HeroSection />
         <ServicesSection />
         <BioSection />

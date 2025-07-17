@@ -13,12 +13,14 @@ export function HeroSection() {
     <section className="relative h-screen flex items-center justify-center">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroBg}
-          alt="Healthcare management background"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-overlay"></div>
+        <div className="absolute inset-0 bg-gradient-dark"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img
+            src={octopusLogo}
+            alt="Octo-Proxi Management Background"
+            className="w-96 h-96 opacity-10 blur-sm"
+          />
+        </div>
       </div>
       
       {/* Content */}

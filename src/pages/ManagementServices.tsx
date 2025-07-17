@@ -93,13 +93,13 @@ export default function ManagementServices() {
                         Learn More
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="bg-card border-border">
+                    <DialogContent className="bg-card border-border max-w-4xl">
                       <DialogHeader>
-                        <DialogTitle className="flex items-center gap-2 text-card-foreground">
-                          <service.icon className="h-5 w-5 text-primary" />
+                        <DialogTitle className="flex items-center gap-2 text-card-foreground text-xl">
+                          <service.icon className="h-6 w-6 text-primary" />
                           {service.title}
                         </DialogTitle>
-                        <DialogDescription className="text-muted-foreground">
+                        <DialogDescription className="text-muted-foreground text-base leading-relaxed">
                           {service.description}
                         </DialogDescription>
                       </DialogHeader>

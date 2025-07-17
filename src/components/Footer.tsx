@@ -3,7 +3,7 @@ import { LinkedinIcon, Mail, Phone } from 'lucide-react';
 export function Footer() {
   return (
     <footer className="bg-secondary py-12 border-t border-border">
-      <div className="container mx-auto px-4 pl-84">
+      <div className="container mx-auto px-4 md:pl-84">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Company Info */}
@@ -48,14 +48,12 @@ export function Footer() {
               <div className="space-y-2 text-muted-foreground">
                 <div>Management Services</div>
                 <div>Assistant Services</div>
-                <div>Healthcare Consulting</div>
-                <div>Operational Support</div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Octo-Proxi Management. All rights reserved.</p>
+            <p>&copy; 2025 Octo-Proxi Management. All rights reserved.</p>
           </div>
         </div>
       </div>

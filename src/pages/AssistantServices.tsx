@@ -11,44 +11,34 @@ export default function AssistantServices() {
   
   const services = [
     {
-      title: "Administrative Support",
+      title: "Medical Administration Office Assistant",
       icon: FileText,
-      description: "Comprehensive administrative assistance including document management, data entry, report generation, and general office support to keep your healthcare operations running smoothly."
+      description: "A Medical Administrative assistant is responsible for the administrative and clerical tasks that keep a medical facility running smoothly. They handle patient communication, scheduling, record management, and billing, ensuring a positive patient experience and efficient operations."
     },
     {
-      title: "Appointment Scheduling",
-      icon: Calendar,
-      description: "Professional scheduling services to manage patient appointments, staff schedules, and facility bookings with efficient coordination and minimal conflicts."
-    },
-    {
-      title: "Phone Support",
-      icon: Phone,
-      description: "Dedicated phone support services for patient inquiries, appointment confirmations, and general communication management to ensure professional customer service."
-    },
-    {
-      title: "Communication Coordination",
-      icon: MessageSquare,
-      description: "Streamline internal and external communications with professional message handling, email management, and inter-departmental coordination services."
-    },
-    {
-      title: "Time Management",
-      icon: Clock,
-      description: "Optimize productivity with professional time management services, task prioritization, and schedule optimization to maximize efficiency in healthcare settings."
-    },
-    {
-      title: "Patient Relations",
-      icon: UserCheck,
-      description: "Enhance patient experience through professional patient relations support, follow-up communications, and satisfaction survey management."
-    },
-    {
-      title: "Data Management",
-      icon: Database,
-      description: "Secure and efficient data management services including patient records organization, database maintenance, and information system support."
-    },
-    {
-      title: "Virtual Assistance",
+      title: "Virtual Assistant",
       icon: HeadphonesIcon,
-      description: "Remote virtual assistance services providing flexible support for administrative tasks, research, and operational assistance when you need it most."
+      description: "Virtual assistants in healthcare offer significant benefits by streamlining administrative tasks, enhancing patient care, and improving efficiency for healthcare providers. The assistant can handle a range of duties, from appointment scheduling and medical billing to providing patient support and monitoring health conditions. Another aspect of Virtual assistant can include a travel assistant who provides clinical and administrative support in various healthcare locations."
+    },
+    {
+      title: "Travel Planning Arrangement Assistant",
+      icon: Calendar,
+      description: "A Travel Planning Assistant in healthcare is a Travel Coordinator who handles all aspects of travel arrangements for healthcare professionals or organizations. These roles are vital in ensuring smooth operations and efficient patient care within the healthcare industry. A Travel Coordinator might work for a hospital system, arranging travel for doctors attending conferences or for medical staff relocating to new facilities."
+    },
+    {
+      title: "Business Event Planning Assistant",
+      icon: MessageSquare,
+      description: "Healthcare event planning assistants play a vital role in supporting the successful execution of events. These events range from conferences and seminars to corporate meetings, training programs as well as organization parties."
+    },
+    {
+      title: "Patient Experience Support Assistant",
+      icon: UserCheck,
+      description: "Patient experience assistant focuses on improving the overall patient journey and satisfaction within a healthcare setting. They often act as a first point of contact, addressing inquiries, providing information, and ensuring patients feel heard and valued. Their role encompasses a range of responsibilities, from administrative tasks to direct patient interaction, all aimed at creating a positive and supportive experience that ultimately leads to a better patient outcome."
+    },
+    {
+      title: "Inventory / Ordering Assistant",
+      icon: Database,
+      description: "A healthcare inventory assistant is responsible for managing medical and surgical supplies within a healthcare facility. This role involves tasks such as stocking supplies, conducting inventory counts, maintaining accurate records, and ensuring proper storage and organization of items. They also play a role in receiving and distributing supplies, and may be involved in tracking expiration dates and preventing waste or unnecessary budget increases."
     }
   ];
 
@@ -93,13 +83,13 @@ export default function AssistantServices() {
                         Learn More
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="bg-card border-border">
+                    <DialogContent className="bg-card border-border max-w-4xl">
                       <DialogHeader>
-                        <DialogTitle className="flex items-center gap-2 text-card-foreground">
-                          <service.icon className="h-5 w-5 text-primary" />
+                        <DialogTitle className="flex items-center gap-2 text-card-foreground text-xl">
+                          <service.icon className="h-6 w-6 text-primary" />
                           {service.title}
                         </DialogTitle>
-                        <DialogDescription className="text-muted-foreground">
+                        <DialogDescription className="text-muted-foreground text-base leading-relaxed">
                           {service.description}
                         </DialogDescription>
                       </DialogHeader>

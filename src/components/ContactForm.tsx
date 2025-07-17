@@ -13,7 +13,6 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -31,7 +30,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
       description: "We'll get back to you as soon as possible.",
     });
     
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setFormData({ name: '', email: '', message: '' });
     setIsSubmitting(false);
   };
 
@@ -47,9 +46,9 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
     <div className="fixed left-0 top-0 h-full w-80 bg-contact border-r border-contact-border shadow-elegant z-50 flex flex-col justify-between hidden md:flex">
       <div className="flex flex-col items-center pt-8 pb-4">
         <img
-          src={octopusLogo}
+          src="/lovable-uploads/60db243d-749f-436f-8ff5-3baf619bb0b7.png"
           alt="Octo-Proxi Management Logo"
-          className="w-24 h-24 mb-2 drop-shadow-lg rounded-full bg-white p-2"
+          className="w-24 h-24 mb-2 drop-shadow-lg rounded-full bg-white p-2 opacity-80"
         />
       </div>
       <Card className="h-full rounded-none border-0 bg-contact">
@@ -99,18 +98,6 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
               />
             </div>
             
-            <div className="space-y-2">
-              <Label htmlFor="phone" className="text-contact-foreground">Phone</Label>
-              <Input
-                id="phone"
-                name="phone"
-                type="tel"
-                value={formData.phone}
-                onChange={handleChange}
-                className="bg-contact border-contact-border text-contact-foreground"
-                placeholder="(555) 123-4567"
-              />
-            </div>
             
             <div className="space-y-2">
               <Label htmlFor="message" className="text-contact-foreground">Message</Label>
@@ -130,18 +117,18 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
               disabled={isSubmitting}
               className="w-full bg-gradient-gold hover:shadow-gold"
             >
-              {isSubmitting ? 'Sending...' : (
-                <>
-                  <Send className="h-4 w-4 mr-2" />
-                  Talk to an Expert
-                </>
-              )}
+                      {isSubmitting ? 'Sending...' : (
+                        <>
+                          <Send className="h-4 w-4 mr-2" />
+                          Email Us
+                        </>
+                      )}
             </Button>
           </form>
         </CardContent>
       </Card>
       <footer className="w-full px-4 py-3 border-t border-contact-border bg-contact text-xs text-center text-contact-foreground/70">
-        © {new Date().getFullYear()} Octo-Proxi Management. All rights reserved.
+        © 2025 Octo-Proxi Management. All rights reserved.
       </footer>
     </div>
   );
@@ -155,9 +142,9 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
           <div className="flex-1 overflow-y-auto">
             <div className="flex flex-col items-center pt-8 pb-4">
               <img
-                src={octopusLogo}
+                src="/lovable-uploads/60db243d-749f-436f-8ff5-3baf619bb0b7.png"
                 alt="Octo-Proxi Management Logo"
-                className="w-24 h-24 mb-2 drop-shadow-lg rounded-full bg-white p-2"
+                className="w-24 h-24 mb-2 drop-shadow-lg rounded-full bg-white p-2 opacity-80"
               />
             </div>
             <Card className="h-full rounded-none border-0 bg-contact">
@@ -207,18 +194,6 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
                     />
                   </div>
                   
-                  <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-contact-foreground">Phone</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="bg-contact border-contact-border text-contact-foreground"
-                      placeholder="(555) 123-4567"
-                    />
-                  </div>
                   
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-contact-foreground">Message</Label>
@@ -241,7 +216,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
                     {isSubmitting ? 'Sending...' : (
                       <>
                         <Send className="h-4 w-4 mr-2" />
-                        Talk to an Expert
+                        Email Us
                       </>
                     )}
                   </Button>
@@ -250,7 +225,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
             </Card>
           </div>
           <footer className="w-full px-4 py-3 border-t border-contact-border bg-contact text-xs text-center text-contact-foreground/70">
-            © {new Date().getFullYear()} Octo-Proxi Management. All rights reserved.
+            © 2025 Octo-Proxi Management. All rights reserved.
           </footer>
         </div>
       </DialogContent>

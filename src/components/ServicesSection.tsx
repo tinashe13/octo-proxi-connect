@@ -35,47 +35,23 @@ export function ServicesSection() {
 
   return (
     <section id="services" className="py-20 bg-gradient-dark">
-      <div className="container mx-auto px-4 pl-84">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our Services
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive healthcare management solutions designed to meet your unique business requirements
-          </p>
-        </div>
-        
+      <div className="container mx-auto px-4 md:pl-84">
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <Card key={index} className="bg-card border-border hover:shadow-elegant transition-all duration-300 hover:scale-105">
-              <CardHeader className="pb-4">
-                <div className="flex items-center justify-between">
-                  <service.icon className="h-12 w-12 text-primary mb-4" />
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={() => navigate(service.route)}
-                    className="hover:bg-gradient-gold hover:border-primary"
-                  >
-                    Learn More
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Button>
-                </div>
-                <CardTitle className="text-2xl text-card-foreground">{service.title}</CardTitle>
+              <CardHeader className="pb-4 text-center">
+                <service.icon className="h-16 w-16 text-primary mx-auto mb-4" />
+                <CardTitle className="text-3xl text-card-foreground mb-6">{service.title}</CardTitle>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={() => navigate(service.route)}
+                  className="hover:bg-gradient-gold hover:border-primary w-full"
+                >
+                  Learn More
+                  <ArrowRight className="h-4 w-4 ml-2" />
+                </Button>
               </CardHeader>
-              <CardContent>
-                <CardDescription className="text-muted-foreground mb-6 text-base leading-relaxed">
-                  {service.description}
-                </CardDescription>
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-card-foreground">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
             </Card>
           ))}
         </div>
