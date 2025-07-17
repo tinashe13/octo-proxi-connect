@@ -3,7 +3,7 @@ import { LinkedinIcon, Mail } from 'lucide-react';
 export function Footer() {
   return (
     <footer className="bg-secondary py-12 border-t border-border">
-      <div className="container mx-auto px-4 lg:pl-84 pl-4">
+      <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
             {/* Company Info */}
