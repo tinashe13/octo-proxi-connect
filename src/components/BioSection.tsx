@@ -42,7 +42,7 @@ export function BioSection() {
                     and my dedication to building positive and impactful company culture.
                   </p>
                   
-                  <div className="flex flex-col sm:flex-row gap-4 mb-6">
+                  <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
                     <Button
                       variant="outline"
                       size="lg"
@@ -72,7 +72,7 @@ export function BioSection() {
                     </Button>
                   </div>
                   
-                  <div className="text-center">
+                  <div className="flex justify-center">
                     <Button
                       size="lg"
                       className="bg-gradient-gold hover:bg-gradient-gold/90 text-white"
