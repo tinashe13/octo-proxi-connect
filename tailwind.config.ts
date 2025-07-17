@@ -20,8 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['"Brush Script MT"', 'cursive', 'system-ui', 'sans-serif'],
-				'montserrat': ['"Brush Script MT"', 'cursive', 'Montserrat', 'sans-serif'],
+				'sans': ['Montserrat', 'system-ui', 'sans-serif'],
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'script': ['Dancing Script', 'cursive'],
 				'brush': ['"Brush Script MT"', 'cursive', 'system-ui', 'sans-serif'],
 			},
 			colors: {
