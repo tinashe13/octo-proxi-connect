@@ -29,17 +29,29 @@ export function BioSection() {
               <Card className="bg-card border-border">
                 <CardContent className="p-8">
                   <h3 className="text-3xl font-bold text-card-foreground mb-6">
-                    Healthcare Management Professional
+                    Simone Uchalova, MBA
                   </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed text-lg">
-                    With years of experience in healthcare management, I specialize in providing 
-                    customized solutions that streamline operations and improve patient outcomes. 
-                    My expertise spans across operational management, compliance, and strategic 
-                    planning for healthcare organizations of all sizes.
+                  <p className="text-muted-foreground mb-4 leading-relaxed text-lg">
+                    I am the CEO and Founder of Octo-Proxi Management, a company focused on a variety of management and assistant 
+                    services in the healthcare industry. I am a results-driven leader with over 11 years of experience in Healthcare 
+                    Management. My leadership style emphasizes collaboration, achieving business growth and successfully leading teams 
+                    while improving operational efficiency.
+                  </p>
+                  <p className="text-muted-foreground mb-4 leading-relaxed text-lg">
+                    My love for organization, coordination, coupled with my commitment to building a diverse and inclusive workspace 
+                    has allowed me to foster and empower teams to reach their full potential. I hold a Master degree in Business 
+                    Executive Management and am a constant student of human psychology in a business environment.
+                  </p>
+                  <p className="text-muted-foreground mb-4 leading-relaxed text-lg">
+                    I am particularly known for my strategic vision, ability to inspire teams and my dedication to building a positive 
+                    and impactful company culture. My passion for planning, multitasking and overcoming unplanned circumstances in a 
+                    professional environment has allowed me to become a natural 'Octopus', a truly versatile and well-rounded leader 
+                    in healthcare organizations.
                   </p>
                   <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
-                    I am passionate about helping healthcare businesses optimize their processes 
-                    and achieve sustainable growth through innovative management strategies.
+                    As a dual citizen of Slovakia and the United States, I have been lucky enough to call several countries my home, 
+                    such as Norway and Spain, which expanded my vernacular fluency and ability to speak several languages such as Slovak, 
+                    Norwegian, and English. I currently reside in Jacksonville, FL where I enjoy exploring coffee places, reading and writing.
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4">
