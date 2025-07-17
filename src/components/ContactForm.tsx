@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -53,8 +54,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
       </div>
       <Card className="h-full rounded-none border-0 bg-contact">
         <CardHeader className="border-b border-contact-border">
-          <CardTitle className="text-contact-foreground flex items-center gap-2">
-            <Mail className="h-5 w-5" />
+          <CardTitle className="text-contact-foreground">
             Contact Us
           </CardTitle>
                 <div className="space-y-2 text-sm text-contact-foreground">
@@ -145,8 +145,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
             </div>
             <Card className="h-full rounded-none border-0 bg-contact">
               <CardHeader className="border-b border-contact-border">
-                <CardTitle className="text-contact-foreground flex items-center gap-2">
-                  <Mail className="h-5 w-5" />
+                <CardTitle className="text-contact-foreground">
                   Contact Us
                 </CardTitle>
                 <div className="space-y-2 text-sm text-contact-foreground">
