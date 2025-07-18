@@ -5,7 +5,7 @@ import { LinkedinIcon, Mail, Star } from 'lucide-react';
 
 export function BioSection() {
   return (
-    <section id="bio" className="py-20 lg:py-32 bg-background">
+    <section id="bio" className="py-20 lg:py-32 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
