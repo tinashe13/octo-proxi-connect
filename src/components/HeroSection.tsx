@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
-import octopusLogo from '/lovable-uploads/2f99c8e2-c7e1-4335-8bb0-7218097e5efb.png';
+import octopusLogo from '/lovable-uploads/41f2d5b0-73cc-412f-8bd0-f3ae34d371b9.png';
 
 export function HeroSection() {
   const scrollToServices = () => {
