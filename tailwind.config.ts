@@ -20,8 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['Montserrat', 'system-ui', 'sans-serif'],
-				'montserrat': ['Montserrat', 'sans-serif'],
+				'sans': ['Touvlo Var', 'system-ui', 'sans-serif'],
+				'montserrat': ['Touvlo Var', 'sans-serif'],
 				'script': ['Dancing Script', 'cursive'],
 				'brush': ['"Brush Script MT"', 'cursive', 'system-ui', 'sans-serif'],
 			},

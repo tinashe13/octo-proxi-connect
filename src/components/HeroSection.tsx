@@ -26,7 +26,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="mb-8 flex justify-center">
-          <div className="w-32 h-32 rounded-full bg-white/10 backdrop-blur-sm p-2 shadow-elegant">
+          <div className="w-40 h-40 rounded-full bg-black/30 backdrop-blur-sm p-2 shadow-elegant">
             <img
               src={octopusLogo}
               alt="Octo-Proxi Management Logo"
@@ -43,7 +43,7 @@ export function HeroSection() {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          Customizable Healthcare Management services for your business needs
+          A company focused on providing a variety of Management and Assistant services in the Healthcare industry.
         </p>
         
         <div className="flex justify-center">
