@@ -68,7 +68,7 @@ export default function ManagementServices() {
               Back to Home
             </Button>
             
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-script">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Healthcare Customizable Management Services
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl">
@@ -81,7 +81,7 @@ export default function ManagementServices() {
               <Card key={index} className="bg-card border-border hover:shadow-elegant transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center">
                   <service.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
-                  <CardTitle className="text-card-foreground font-script">{service.title}</CardTitle>
+                  <CardTitle className="text-card-foreground">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <Dialog>
