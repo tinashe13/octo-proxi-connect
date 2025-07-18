@@ -26,13 +26,11 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="mb-8 flex justify-center">
-          <div className="w-40 h-40 rounded-full bg-black/30 backdrop-blur-sm p-2 shadow-elegant">
-            <img
-              src={octopusLogo}
-              alt="Octo-Proxi Management Logo"
-              className="w-full h-full object-cover rounded-full drop-shadow-lg"
-            />
-          </div>
+          <img
+            src={octopusLogo}
+            alt="Octo-Proxi Management Logo"
+            className="w-40 h-40 object-contain drop-shadow-lg"
+          />
         </div>
         
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
