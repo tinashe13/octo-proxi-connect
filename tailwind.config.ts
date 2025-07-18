@@ -20,10 +20,10 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['Touvlo Var', 'system-ui', 'sans-serif'],
-				'montserrat': ['Touvlo Var', 'sans-serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'montserrat': ['Inter', 'sans-serif'],
 				'script': ['Dancing Script', 'cursive'],
-				'brush': ['"Brush Script MT"', 'cursive', 'system-ui', 'sans-serif'],
+				'brush': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

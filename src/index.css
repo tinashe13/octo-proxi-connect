@@ -8,7 +8,7 @@
 @layer base {
   :root {
     /* Main color palette */
-    --background: 220 13% 9%;
+    --background: 0 0% 41%; /* #686868 */
     --foreground: 0 0% 98%;
 
     --card: 220 13% 12%;
@@ -113,7 +113,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-brush;
+    @apply bg-background text-foreground font-sans;
   }
 }
 
