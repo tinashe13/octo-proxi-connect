@@ -13,7 +13,12 @@ export function HeroSection() {
     <section className="relative h-screen flex items-center justify-center">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-dark"></div>
+        <img
+          src="/lovable-uploads/4d4d8441-fa66-48b5-9f3a-70e337568f17.png"
+          alt="Hero Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-overlay"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <img
             src={octopusLogo}
