@@ -29,7 +29,7 @@ export function HeroSection() {
           <img
             src={octopusLogo}
             alt="Octo-Proxi Management Logo"
-            className="w-40 h-40 object-contain drop-shadow-lg"
+            className="w-60 h-60 object-contain drop-shadow-lg"
           />
         </div>
         
