@@ -25,9 +25,9 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
     
     try {
       // EmailJS configuration - Replace these with your actual values
-      const serviceId = 'YOUR_SERVICE_ID'; // e.g., 'service_xxxxxxx'
-      const templateId = 'YOUR_TEMPLATE_ID'; // e.g., 'template_xxxxxxx'
-      const publicKey = 'YOUR_PUBLIC_KEY'; // e.g., 'xxxxxxxxxxxxxxx'
+      const serviceId = 'service_tt2af2s'; // e.g., 'service_xxxxxxx'
+      const templateId = 'template_p363yfa'; // e.g., 'template_xxxxxxx'
+      const publicKey = 't2-uE1q9MOouTfhUg'; // e.g., 'xxxxxxxxxxxxxxx'
 
       // Send email using EmailJS
       await emailjs.send(
