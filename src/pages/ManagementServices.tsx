@@ -53,7 +53,17 @@ export default function ManagementServices() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen">
+      {/* Background image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/src/assets/background website.png"
+      alt="Background"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
+  </div>
+  <div className="relative z-10">
       <ContactForm />
       
       <main className="lg:pl-80">
@@ -78,7 +88,7 @@ export default function ManagementServices() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="bg-card border-border hover:shadow-elegant transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-[#b4a693] text-white border-none shadow-elegant transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center">
                   <service.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
                   <CardTitle className="text-card-foreground">{service.title}</CardTitle>
@@ -86,17 +96,17 @@ export default function ManagementServices() {
                 <CardContent>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="outline" className="w-full hover:bg-gradient-gold hover:border-primary">
+                      <Button variant="outline" className="bg-gradient-gold w-full hover:bg-gradient-gold border-primary">
                         Learn More
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="bg-card border-border max-w-4xl">
+                    <DialogContent className="bg-[#b4a693] text-white border-none max-w-4xl">
                       <DialogHeader>
                         <DialogTitle className="flex items-center gap-2 text-card-foreground text-xl">
                           <service.icon className="h-6 w-6 text-primary" />
                           {service.title}
                         </DialogTitle>
-                        <DialogDescription className="text-muted-foreground text-base leading-relaxed">
+                        <DialogDescription className="text-white text-base leading-relaxed">
                           {service.description}
                         </DialogDescription>
                       </DialogHeader>
@@ -108,6 +118,7 @@ export default function ManagementServices() {
           </div>
         </div>
       </main>
+    </div>
     </div>
   );
 }

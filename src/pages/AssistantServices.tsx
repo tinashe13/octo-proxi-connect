@@ -39,11 +39,26 @@ export default function AssistantServices() {
       title: "Inventory / Ordering Assistant",
       icon: Database,
       description: "A healthcare inventory assistant is responsible for managing medical and surgical supplies within a healthcare facility. This role involves tasks such as stocking supplies, conducting inventory counts, maintaining accurate records, and ensuring proper storage and organization of items. They also play a role in receiving and distributing supplies, and may be involved in tracking expiration dates and preventing waste or unnecessary budget increases."
+    },
+    {
+      title: "Customizable Assistant Services",
+      icon: Database,
+      description: "Customizable assistant services include 'Pro re nata' (PRN) services for Healthcare organizations that involve tailored solutions designed specifically for your unique operational needs. These services are flexible and adaptable to meet the specific requirements of your healthcare organization, ensuring optimal efficiency and effectiveness in your daily operations."
     }
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen">
+      {/* Background image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/src/assets/background website.png"
+      alt="Background"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
+  </div>
+  <div className="relative z-10">
       <ContactForm />
       
       <main className="lg:pl-80">
@@ -68,7 +83,7 @@ export default function AssistantServices() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="bg-card border-border hover:shadow-elegant transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-[#b4a693] text-white border-none shadow-elegant transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center">
                   <service.icon className="h-12 w-12 text-primary mb-4 mx-auto" />
                   <CardTitle className="text-card-foreground">{service.title}</CardTitle>
@@ -76,17 +91,17 @@ export default function AssistantServices() {
                 <CardContent>
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="outline" className="w-full hover:bg-gradient-gold hover:border-primary">
+                      <Button variant="outline" className="bg-gradient-gold w-full hover:bg-gradient-gold border-primary">
                         Learn More
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="bg-card border-border max-w-4xl">
+                    <DialogContent className="bg-[#b4a693] text-white border-none max-w-4xl">
                       <DialogHeader>
                         <DialogTitle className="flex items-center gap-2 text-card-foreground text-xl">
                           <service.icon className="h-6 w-6 text-primary" />
                           {service.title}
                         </DialogTitle>
-                        <DialogDescription className="text-muted-foreground text-base leading-relaxed">
+                        <DialogDescription className="text-white text-base leading-relaxed">
                           {service.description}
                         </DialogDescription>
                       </DialogHeader>
@@ -98,6 +113,7 @@ export default function AssistantServices() {
           </div>
         </div>
       </main>
+    </div>
     </div>
   );
 }

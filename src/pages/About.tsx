@@ -24,7 +24,7 @@ export default function About() {
 
       <main className="lg:pl-80 pl-0">
         {/* Header */}
-        <section className="py-12 lg:py-20 bg-gradient-to-br from-background to-muted/30">
+        <section className="bg-[#b4a693] py-12 lg:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <Button
@@ -39,7 +39,7 @@ export default function About() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 About Me
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground">
+              <p className="text-xl md:text-2xl text-white">
                 Learn more about the healthcare management expert behind Octo-Proxi Management
               </p>
             </div>
@@ -47,7 +47,17 @@ export default function About() {
         </section>
 
         {/* Main Content */}
-        <section className="py-20 bg-background">
+        <section className="relative py-20 bg-background">
+          {/* Background image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/src/assets/background website.png"
+      alt="Background"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
+  </div>
+  <div className="relative z-10">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -60,16 +70,16 @@ export default function About() {
                 </div>
                 
                 <div className="order-1 lg:order-2">
-                  <Card className="bg-card border-border">
+                  <Card className="bg-[#b4a693] text-black border-none shadow-elegant">
                     <CardContent className="p-8">
                       <h2 className="text-3xl font-bold text-card-foreground mb-6">
                         Simone Uchalova, MBA
                       </h2>
-                      <h3 className="text-xl font-semibold text-primary mb-6">
+                      <h3 className="text-xl font-semibold text-white mb-6">
                         CEO & Founder, Octo-Proxi Management
                       </h3>
                       
-                      <div className="space-y-6 text-muted-foreground leading-relaxed">
+                      <div className="space-y-6 text-white leading-relaxed">
                         <p>
                           I am the CEO and Founder of Octo-Proxi Management, a company focused on a variety of management and assistant 
                           services in the healthcare industry. I am a results-driven leader with over 11 years of experience in Healthcare 
@@ -115,8 +125,8 @@ export default function About() {
                           <Button
                             variant="outline"
                             size="lg"
-                            className="hover:bg-gradient-gold hover:border-primary flex-1 min-w-0 sm:flex-none"
-                            onClick={() => window.open('https://linkedin.com', '_blank')}
+                            className="bg-gradient-gold border-primary flex-1 min-w-0 sm:flex-none text-white"
+                            onClick={() => window.open('https://www.linkedin.com/in/simone-uchalova-152197304/', '_blank')}
                           >
                             <LinkedinIcon className="h-4 w-4 mr-2" />
                             <span className="truncate">LinkedIn</span>
@@ -124,7 +134,7 @@ export default function About() {
                           <Button
                             variant="outline"
                             size="lg"
-                            className="hover:bg-gradient-gold hover:border-primary flex-1 min-w-0 sm:flex-none"
+                            className="bg-gradient-gold border-primary flex-1 min-w-0 sm:flex-none text-white"
                             onClick={() => window.open('https://www.google.com/search?q=octo+proxi+management+reviews', '_blank')}
                           >
                             <Star className="h-4 w-4 mr-2" />
@@ -133,8 +143,8 @@ export default function About() {
                           <Button
                             variant="outline"
                             size="lg"
-                            className="hover:bg-gradient-gold hover:border-primary flex-1 min-w-0 sm:flex-none"
-                            onClick={() => window.open('mailto:info@octoproxi.com')}
+                            className="bg-gradient-gold border-primary flex-1 min-w-0 sm:flex-none text-white"
+                            onClick={() => window.open('mailto:octoproximanagement@gmail.com')}
                           >
                             <Mail className="h-4 w-4 mr-2" />
                             <span className="truncate">Email</span>
@@ -146,6 +156,7 @@ export default function About() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </section>
 

@@ -11,15 +11,15 @@ export function HeroSection() {
 
   return (
     <section className="relative h-screen flex items-center justify-center">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/lovable-uploads/4d4d8441-fa66-48b5-9f3a-70e337568f17.png"
-          alt="Hero Background"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-overlay"></div>
-      </div>
+      {/* Background image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/src/assets/background website.png"
+      alt="Background"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
+  </div>
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">

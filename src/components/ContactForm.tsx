@@ -61,7 +61,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
           <div className="space-y-2 text-sm text-contact-foreground text-center">
             <div className="flex items-center justify-center gap-2">
               <Mail className="h-4 w-4" />
-              <span>info@octoproxi.com</span>
+              <span>octoproximanagement@gmail.com</span>
             </div>
           </div>
         </CardHeader>
@@ -153,7 +153,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
                 <div className="space-y-2 text-sm text-contact-foreground text-center">
                   <div className="flex items-center justify-center gap-2">
                     <Mail className="h-4 w-4" />
-                    <span>info@octoproxi.com</span>
+                    <span>octoproximanagement@gmail.com</span>
                   </div>
                 </div>
               </CardHeader>
