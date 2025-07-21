@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { Send, Mail } from 'lucide-react';
 import { Dialog, DialogContent, DialogOverlay, DialogTitle } from '@/components/ui/dialog';
+import emailjs from '@emailjs/browser';
 
 export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?: boolean, onMobileClose?: () => void } = {}) {
   const [formData, setFormData] = useState({
@@ -22,16 +23,43 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
-    
-    setFormData({ name: '', email: '', message: '' });
-    setIsSubmitting(false);
+    try {
+      // EmailJS configuration - Replace these with your actual values
+      const serviceId = 'YOUR_SERVICE_ID'; // e.g., 'service_xxxxxxx'
+      const templateId = 'YOUR_TEMPLATE_ID'; // e.g., 'template_xxxxxxx'
+      const publicKey = 'YOUR_PUBLIC_KEY'; // e.g., 'xxxxxxxxxxxxxxx'
+
+      // Send email using EmailJS
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'octoproximanagement@gmail.com',
+        },
+        publicKey
+      );
+
+      toast({
+        title: "Message sent successfully!",
+        description: "We'll get back to you as soon as possible.",
+      });
+      
+      setFormData({ name: '', email: '', message: '' });
+      if (onMobileClose) onMobileClose();
+      
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact us directly at octoproximanagement@gmail.com",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
