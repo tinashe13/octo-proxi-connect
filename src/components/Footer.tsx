@@ -44,18 +44,18 @@ export function Footer() {
             <div>
       <h4 className="text-lg font-semibold text-foreground mb-4">Services</h4>
       <div className="space-y-2 text-white">
-        <div className="flex items-center gap-2">
+        <div className="flex justify-center md:justify-start">
           <button
             onClick={() => navigate('/management-services')}
-            className="hover:text-primary transition-colors text-left"
+            className="hover:text-primary transition-colors"
           >
             Management Services
           </button>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex justify-center md:justify-start">
           <button
             onClick={() => navigate('/assistant-services')}
-            className="hover:text-primary transition-colors text-left"
+            className="hover:text-primary transition-colors"
           >
             Assistant Services
           </button>
