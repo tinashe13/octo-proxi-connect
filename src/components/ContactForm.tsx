@@ -30,7 +30,7 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
       const REACT_APP_publicKey = 't2-uE1q9MOouTfhUg'; // e.g., 'xxxxxxxxxxxxxxx'
 
       // Send email using EmailJS
-      emailjs.send(
+      await emailjs.send(
         REACT_APP_serviceId,
         REACT_APP_templateId,
         {
