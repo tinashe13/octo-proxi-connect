@@ -25,21 +25,21 @@ export function ContactForm({ mobileOpen = false, onMobileClose }: { mobileOpen?
     
     try {
       // EmailJS configuration - Replace these with your actual values
-      const serviceId = 'service_tt2af2s'; // e.g., 'service_xxxxxxx'
-      const templateId = 'template_p363yfa'; // e.g., 'template_xxxxxxx'
-      const publicKey = 't2-uE1q9MOouTfhUg'; // e.g., 'xxxxxxxxxxxxxxx'
+      const REACT_APP_serviceId = 'service_tt2af2s'; // e.g., 'service_xxxxxxx'
+      const REACT_APP_templateId = 'template_p363yfa'; // e.g., 'template_xxxxxxx'
+      const REACT_APP_publicKey = 't2-uE1q9MOouTfhUg'; // e.g., 'xxxxxxxxxxxxxxx'
 
       // Send email using EmailJS
       await emailjs.send(
-        serviceId,
-        templateId,
+        REACT_APP_serviceId,
+        REACT_APP_templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
           to_email: 'octoproximanagement@gmail.com',
         },
-        publicKey
+        REACT_APP_publicKey
       );
 
       toast({
