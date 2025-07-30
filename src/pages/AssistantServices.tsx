@@ -41,6 +41,11 @@ export default function AssistantServices() {
       description: "A healthcare inventory assistant is responsible for managing medical and surgical supplies within a healthcare facility. This role involves tasks such as stocking supplies, conducting inventory counts, maintaining accurate records, and ensuring proper storage and organization of items. They also play a role in receiving and distributing supplies, and may be involved in tracking expiration dates and preventing waste or unnecessary budget increases."
     },
     {
+      title: "Patient Education Assistant",
+      icon: Database,
+      description: "Patient education encompasses sharing information about a patient's treatment options, potential risks and benefits. It also involves teaching patients practical skills related to managing their conditions. The goal is to ensure patients understand their health conditions and treatment plans. Educated patients are more likely to adhere to treatment plans and experience better overall health outcomes. Effective patient education can lead to cost reductions due to fewer hospital readmissions and complications."
+    },
+    {
       title: "Customizable Assistant Services",
       icon: Database,
       description: "Customizable assistant services include 'Pro re nata' (PRN) services for Healthcare organizations that involve tailored solutions designed specifically for your unique operational needs. These services are flexible and adaptable to meet the specific requirements of your healthcare organization, ensuring optimal efficiency and effectiveness in your daily operations."
