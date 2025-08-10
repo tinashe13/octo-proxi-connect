@@ -72,7 +72,7 @@ export function BioSection() {
                         variant="outline"
                         size="lg"
                         className="bg-gradient-gold border-primary flex-1 min-w-0 sm:flex-none text-white"
-                        onClick={() => window.open('https://www.google.com/search?q=octo+proxi+management+reviews', '_blank')}
+                        onClick={() => window.open('https://g.page/r/CVdCi2gbJwj5EAI', '_blank')}
                       >
                         <Star className="h-4 w-4 mr-2" />
                         <span className="truncate">Reviews</span>
